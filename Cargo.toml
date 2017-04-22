@@ -1,0 +1,24 @@
+[package]
+name = "RustPractice"
+version = "0.1.0"
+authors = ["blueswhisper <youlansedeninan@gmail.com>"]
+
+[[example]]
+name="hello"
+
+[[example]]
+name="fortmat_output"
+
+[[example]]
+name="debug"
+
+[[example]]
+name="display"
+
+[[example]]
+name="list_display"
+
+[[example]]
+name="format"
+
+[dependencies]

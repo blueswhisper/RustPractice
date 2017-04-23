@@ -8,5 +8,10 @@ Cargo.lock
 
 #idea index file
 .idea/
-Cargo.lock
-target
+
+# compose rules to ensure only commit rust source code file (end with .rs) in /examples/ folder
+# will not affect other folders. it can avoid commmit executable binary file compiled by rustc
+# first ignore all files in /examples/ folder
+/examples/*
+# next negates ignore *.rs file in /examples/ folder
+!/examples/*.rs

@@ -21,4 +21,13 @@ name="list_display"
 [[example]]
 name="format"
 
+[[example]]
+name="data_and_operator"
+
+[[example]]
+name="tuple"
+
+[[example]]
+name="array_and_slice"
+
 [dependencies]

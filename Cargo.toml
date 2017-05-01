@@ -30,4 +30,20 @@ name="tuple"
 [[example]]
 name="array_and_slice"
 
-[dependencies]
+[[example]]
+name="structs"
+
+[[example]]
+name="enum_person"
+
+[[example]]
+name="use_keyword"
+
+[[example]]
+name="c_style_enum"
+
+[[example]]
+name="constant"
+
+[[example]]
+name="linked_list"

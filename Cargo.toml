@@ -59,3 +59,12 @@ name="variable_scope_and_shadow"
 
 [[example]]
 name="type_cast"
+
+[[example]]
+name="literal_value"
+
+[[example]]
+name="type_infer"
+
+[[example]]
+name="type_alias"

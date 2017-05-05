@@ -68,3 +68,6 @@ name="type_infer"
 
 [[example]]
 name="type_alias"
+
+[[example]]
+name="expr"

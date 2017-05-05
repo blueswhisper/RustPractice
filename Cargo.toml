@@ -47,3 +47,15 @@ name="constant"
 
 [[example]]
 name="linked_list"
+
+[[example]]
+name="variable_bind"
+
+[[example]]
+name="mutable_variable"
+
+[[example]]
+name="variable_scope_and_shadow"
+
+[[example]]
+name="type_cast"

@@ -146,3 +146,15 @@ name="iterator_find_closure"
 
 [[example]]
 name="high_order_function"
+
+[[example]]
+name="mod_visibility"
+
+[[example]]
+name="struct_visibility"
+
+[[example]]
+name="use"
+
+[[example]]
+name="super_and_self"

@@ -7,7 +7,7 @@ authors = ["blueswhisper <youlansedeninan@gmail.com>"]
 name="hello"
 
 [[example]]
-name="fortmat_output"
+name="format_output"
 
 [[example]]
 name="debug"
@@ -158,3 +158,33 @@ name="use"
 
 [[example]]
 name="super_and_self"
+
+[[example]]
+name="thread_sample"
+
+[[example]]
+name="channel_sample"
+
+[[example]]
+name="path_sample"
+
+[[example]]
+name="raii"
+
+[[example]]
+name="open_file"
+
+[[example]]
+name="process_sample"
+
+[[example]]
+name="pipe_sample"
+
+[[example]]
+name="wait_child"
+
+[[example]]
+name="fs_sample"
+
+[[example]]
+name="cmd_args"

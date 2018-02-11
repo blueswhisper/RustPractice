@@ -188,3 +188,12 @@ name="fs_sample"
 
 [[example]]
 name="cmd_args"
+
+[[example]]
+name="chinese_str"
+
+[[example]]
+name="struct_mem_move"
+
+[[example]]
+name="same_method_name"

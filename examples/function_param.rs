@@ -1,9 +1,9 @@
 fn call_me<F: Fn()>(f: F) {
-	f()
+    f()
 }
 
 fn function() {
-	println!("I am a function");
+    println!("I am a function");
 }
 
 fn main() {

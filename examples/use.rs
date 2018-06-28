@@ -7,7 +7,7 @@ fn function() {
 
 mod deeply {
     pub mod nested {
-        pub fn function () {
+        pub fn function() {
             println!("called `deeply::nested::function()`");
         }
     }

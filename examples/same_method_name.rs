@@ -1,4 +1,4 @@
-struct A ;
+struct A;
 
 trait One {
     fn act(&self);

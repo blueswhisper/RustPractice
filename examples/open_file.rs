@@ -12,7 +12,7 @@ fn main() {
     };
 
     let mut s = String::new();
-    match file.read_to_string(&mut s ) {
+    match file.read_to_string(&mut s) {
         Err(why) => panic!("couldn't read {}: {}", display, why.description()),
         Ok(_) => print!("{} contains:\n{}", display, s),
     }

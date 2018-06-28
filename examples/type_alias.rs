@@ -17,8 +17,10 @@ fn main() {
     let inches: Inch = 2 as u64_t;
 
     // 注意类型的别名*没有*提供任何额外的类型安全，因为别名*不是*新的类型
-    println!("{} nanoseconds + {} inches = {} unit?",
-             nanoseconds,
-             inches,
-             nanoseconds + inches);
+    println!(
+        "{} nanoseconds + {} inches = {} unit?",
+        nanoseconds,
+        inches,
+        nanoseconds + inches
+    );
 }

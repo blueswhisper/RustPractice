@@ -1,7 +1,9 @@
 // `F` 必须针对一个没有输入参数和返回值的闭包实现 `Fn`
 // —— 确切地讲是 `print` 要求的类型。
-fn apply<F>(f: F) where
-    F: Fn() {
+fn apply<F>(f: F)
+where
+    F: Fn(),
+{
     f();
 }
 

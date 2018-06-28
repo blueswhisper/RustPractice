@@ -16,5 +16,8 @@ fn main() {
     // 对数组 `iter()`  产出 `&i32`。
     println!("Find 2 in array1: {:?}", array1.iter().find(|&&x| x == 2));
     // 对数组的 `into_iter()` 通常产出 `&i32`。
-    println!("Find 2 in array2: {:?}", array2.into_iter().find(|&&x| x == 2));
+    println!(
+        "Find 2 in array2: {:?}",
+        array2.into_iter().find(|&&x| x == 2)
+    );
 }

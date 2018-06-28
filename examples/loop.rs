@@ -4,8 +4,8 @@ fn main() {
     loop {
         count += 1;
         if count == 3 {
-        	println!("three");
-        	continue;
+            println!("three");
+            continue;
         }
         println!("{}", count);
         if count == 5 {

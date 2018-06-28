@@ -26,8 +26,8 @@ fn main() {
     // a `mut`.）
     let mut count = 0;
     let mut inc = || {
-    	count += 1;
-    	println!("`count`: {}", count);
+        count += 1;
+        println!("`count`: {}", count);
     };
 
     inc();
@@ -41,7 +41,7 @@ fn main() {
 
     // `mem::drop` requires `T` so this must take by value. A copy type
     // would copy into the closure leaving the original untouched.
-    // 
+    //
     // `mem::drop` 要求 `T`，所以这必须通过值来实现（原文：`mem::drop`
     // requires `T` so this must take by value.）。可复制类型将会复制
     // 值到闭包而不会用到原始值。不可复制类型必须移动（move），从而

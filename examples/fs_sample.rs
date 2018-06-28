@@ -35,7 +35,7 @@ fn main() {
     // 创建一个目录，返回 `io::Result<()>`
     match fs::create_dir("a") {
         Err(why) => println!("! {:?}", why.kind()),
-        Ok(_) => {},
+        Ok(_) => {}
     }
 
     println!("`echo hello > a/b.txt`");
@@ -59,7 +59,7 @@ fn main() {
     // 创建一个符号链接，返回 `io::Resutl<()>`
     if cfg!(target_family = "unix") {
         unix::fs::symlink("../b.txt", "a/c/b.txt").unwrap_or_else(|why| {
-        println!("! {:?}", why.kind());
+            println!("! {:?}", why.kind());
         });
     }
 

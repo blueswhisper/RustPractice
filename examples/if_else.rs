@@ -1,7 +1,7 @@
 fn main() {
     let n = 15;
     if n < 0 {
-    	print!("{} is negative", n);
+        print!("{} is negative", n);
     } else if n > 0 {
         print!("{} is positive", n);
     } else {

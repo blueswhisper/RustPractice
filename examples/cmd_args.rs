@@ -11,4 +11,3 @@ fn main() {
     //   $ ./args arg1 arg2
     println!("I got {:?} arguments: {:?}.", args.len() - 1, &args[1..]);
 }
-

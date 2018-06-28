@@ -1,14 +1,16 @@
 fn main() {
-	//`{}`会被任意内容替换,值会转化为字符串
+    //`{}`会被任意内容替换,值会转化为字符串
     println!("{} days", 30);
 
     //`{}`可以指定位置参数,位置参数从0开始
     println!("{0}, this is {1}. {1}, this is {0}", "Alice", "Bob");
     //`{}`也可以使用赋值语句
-    println!("{subject} {verb} {object}",
-             object="the lazy dog",
-             subject="the quick brown fox",
-             verb="jumps over");
+    println!(
+        "{subject} {verb} {object}",
+        object = "the lazy dog",
+        subject = "the quick brown fox",
+        verb = "jumps over"
+    );
     // 特殊的格式实现可以在后面加上 `:` 符号。
     println!("{} of {:b} people know binary, the other half don't", 1, 2);
 

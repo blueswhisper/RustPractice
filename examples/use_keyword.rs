@@ -30,6 +30,6 @@ fn main() {
     match work {
         // 再次注意到这里没有作用域。
         Civilian => println!("Civilians work!"),
-        Soldier  => println!("Soldiers fight!"),
+        Soldier => println!("Soldiers fight!"),
     }
 }

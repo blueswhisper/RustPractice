@@ -32,7 +32,7 @@ fn main() {
 
     // slice 可以指向数组的一部分
     println!("borrow a section of the array as a slice");
-    analyze_slice(&ys[1 .. 4]);
+    analyze_slice(&ys[1..4]);
 
     // 越界的索引会引发 panic（中文意思是：惊恐、恐慌等意）
     //println!("{}", xs[5]);
@@ -40,5 +40,8 @@ fn main() {
     // 测试自定义对象的在数组中的内存分布
     // 测试结果像是数组存储了对象所有的属性的大小
     let matrixs: [Matrix; 2] = [Matrix(1.0, 2.0, 3.0, 4.0), Matrix(5.0, 6.0, 7.0, 8.0)];
-    println!("two elements Matrix array occupies {} bytes", mem::size_of_val(&matrixs));
+    println!(
+        "two elements Matrix array occupies {} bytes",
+        mem::size_of_val(&matrixs)
+    );
 }

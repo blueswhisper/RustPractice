@@ -10,16 +10,16 @@ struct Point {
 
 // 实现的代码块，所有的 `Point` 方法都在这里给出
 impl Point {
-	// 这是一个静态方法（static method）
+    // 这是一个静态方法（static method）
     // 静态方法不需要通过实例来调用
     // 这类方法一般用作构造器（constructor
     fn origin() -> Point {
-    	Point{ x: 0.0, y: 0.0 }
+        Point { x: 0.0, y: 0.0 }
     }
 
     // 另外一个静态方法，带有两个参数：
     fn new(x: f64, y: f64) -> Point {
-    	Point{ x: x, y: y }
+        Point { x: x, y: y }
     }
 }
 
@@ -30,40 +30,40 @@ struct Rectangle {
 }
 
 impl Rectangle {
-	// 这是实例方法（instance method）
+    // 这是实例方法（instance method）
     // `&self` 是 `self: &Self` 的语法糖（sugar），其中 `Self` 是所调用对象
     // 的类型。在这个例子中 `Self` = `Rectangle`
-	fn area(&self) -> f64 {
-		let Point{ x: x1, y: y1 } = self.p1;
-		let Point{ x: x2, y: y2 } = self.p2;
-		((x1 - x2) * (y1 - y2)).abs()
-	}
+    fn area(&self) -> f64 {
+        let Point { x: x1, y: y1 } = self.p1;
+        let Point { x: x2, y: y2 } = self.p2;
+        ((x1 - x2) * (y1 - y2)).abs()
+    }
 
-	fn perimeter(&self) -> f64 {
-		let Point{ x: x1, y: y1 } = self.p1;
-		let Point{ x: x2, y: y2 } = self.p2;
-		2.0 * ((x1 - x2).abs() + (y1 - y2).abs())
-	}
+    fn perimeter(&self) -> f64 {
+        let Point { x: x1, y: y1 } = self.p1;
+        let Point { x: x2, y: y2 } = self.p2;
+        2.0 * ((x1 - x2).abs() + (y1 - y2).abs())
+    }
 
-	// 这个方法要求调用者对象是可变的
+    // 这个方法要求调用者对象是可变的
     // `&mut self` 为 `self: &mut Self` 的语法糖
-	fn translate(&mut self, x: f64, y: f64) {
-		self.p1.x += x;
-		self.p2.x += x;
+    fn translate(&mut self, x: f64, y: f64) {
+        self.p1.x += x;
+        self.p2.x += x;
 
-		self.p1.y += y;
-		self.p2.y += y;
-	}
+        self.p1.y += y;
+        self.p2.y += y;
+    }
 }
 
 // `Pair` 含有的资源：两个堆分配的整型
 struct Pair(Box<i32>, Box<i32>);
 
 impl Pair {
-	// 这个方法“消费”调用者对象的资源
+    // 这个方法“消费”调用者对象的资源
     // `self` 为 `self: Self` 的语法糖
     fn destroy(self) {
-    	// 解构 `self`
+        // 解构 `self`
         let Pair(first, second) = self;
 
         println!("Destroying Pair({}, {})", first, second);

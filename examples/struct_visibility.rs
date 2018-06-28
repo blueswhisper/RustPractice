@@ -12,16 +12,16 @@ mod my {
 
     impl<T> BlackBox<T> {
         pub fn new(contents: T) -> BlackBox<T> {
-            BlackBox {
-                contents: contents,
-            }
+            BlackBox { contents: contents }
         }
     }
 }
 
 fn main() {
     // 带公有字段的公有结构体,可以像平常一样构造
-    let white_box = my::WhiteBox { contents: "public information" };
+    let white_box = my::WhiteBox {
+        contents: "public information",
+    };
 
     // 并且它们的字段是可以正常访问到的
     println!("the WhiteBox contains: {}", white_box.contents);

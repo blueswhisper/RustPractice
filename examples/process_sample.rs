@@ -3,9 +3,8 @@ use std::process::Command;
 fn main() {
     let output = Command::new("rustc")
         .arg("--version")
-        .output().unwrap_or_else(|e| {
-            panic!("failed to execute procs: {}", e)
-    });
+        .output()
+        .unwrap_or_else(|e| panic!("failed to execute procs: {}", e));
 
     if output.status.success() {
         let s = String::from_utf8_lossy(&output.stdout);
@@ -17,4 +16,3 @@ fn main() {
         print!("rustc failed and stderr was:\n{}", s);
     }
 }
-

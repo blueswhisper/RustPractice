@@ -8,7 +8,7 @@ fn main() {
         // 绑定到第二个元素
         (0, y) => println!("First is `0` and `y` is `{:?}`", y),
         (x, 0) => println!("`x` is `{:?}` and last is `0`", x),
-        _      => println!("It doesn't matter what they are"),
+        _ => println!("It doesn't matter what they are"),
         // `_` 表示不将值绑定到变量
     }
 }
